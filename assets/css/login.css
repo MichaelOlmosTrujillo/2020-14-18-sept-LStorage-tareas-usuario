@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondoBody: rgb(32, 28, 28);
+    --fondoUsuario: rgb(47, 42, 42);
+    --boderUsuario: rgb(93, 93, 93);
+    --colorLetra: rgb(231, 230, 228);
+}
+
+body {
+    background-color: var(--fondoBody);
+}
+
+.contenedor {
+    width: 80%;
+    background-color: var(--fondoUsuario);
+    border: solid 1px var(--boderUsuario);
+    margin: 5% 10% 5% 10%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.usuario {
+    width: 30%;
+    background-color: var(--fondoBody);
+    margin-right: 20px;
+}
+
+.tareas {
+    width: 70%;
+}
+
+.imagenUsuario {
+    max-width: 100%;
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+h3,
+h1 {
+    color: var(--colorLetra);
+}
+
+.tareasLaterales {
+    padding: auto 20px;
+    margin: auto 20px;
+}
+
+li {
+    color: var(--colorLetra);
+}
+
+.TareasPendientes {
+    color: var(--colorLetra);
+}
