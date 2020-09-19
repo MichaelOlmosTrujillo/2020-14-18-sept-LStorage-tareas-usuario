@@ -2,7 +2,8 @@ let botonLateral = document.getElementById('añadirtareaLateral');
 let tareasUsuario = document.getElementById('tareasUsuario');
 let anadirTareaMain = document.getElementById('botonMain');
 let TareasPendientes = document.getElementById('TareasPendientes');
-console.log(TareasPendientes, );
+let usuario =
+    console.log(TareasPendientes, );
 botonLateral.addEventListener('click', () => {
     let tarea = prompt('Escribe tu tarea');
     tareasUsuario.innerHTML += '<li> ' + tarea + '</h1>';
