@@ -6,4 +6,4 @@
 
 ## 3 Sesión del usuario donde puede agregar tareas en una barra lateral y por medio de un teclado virtual puede agregar otras tareas en la sesión del usuario. El teclado debe estar integrado en la sesión del usuario.
 
-### Todavía me falta agregar localstorage y estilos
+### Todavía me falta agregar algunas funcionalidades y estilos. Ya agregué localStorage

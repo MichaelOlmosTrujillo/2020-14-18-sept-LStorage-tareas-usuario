@@ -4,39 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/login.css">
     <title>Login</title>
 </head>
 
 <body>
-    <div class="contenedor">
-        <div class="usuario">
-            <div class="imageUsuario">
-                <img class="" src="./../images/usuario.jpg" alt="usuario">
-            </div>
-            <div>
-                <h3>Bienvenido</h3>
-                <h2 id="nombreUsuario"></h2>
-                <div class="tareasLaterales">
-                    <ul id="tareasUsuario">
+    <form action="./perfilUsuario.html">
+        <input type="text" id="nombreLogin" placeholder="Escribe tu correo">
+        <input type="password" id="passwordLogin" placeholder="Escribe tu contraseña">
+        <button type="submit" id="botonLogin">Entrar</button>
+    </form>
 
-                    </ul>
-                </div>
-                <button type="button" id="añadirtareaLateral">Añadir nueva lista</button>
-            </div>
-        </div>
-        <div class="tareas">
-            <h1>Listas de tareas del bootcamp</h1>
-            <input type="text" id="tareaMain" placeholder="Escribe tu tarea">
-            <button type="button" id="botonMain">Añadir tarea</button>
-
-            <div class="TareasPendientes">
-                <table id="TareasPendientes">
-
-                </table>
-            </div>
-        </div>
-    </div>
 
 
     <script src="./../js/login.js"></script>

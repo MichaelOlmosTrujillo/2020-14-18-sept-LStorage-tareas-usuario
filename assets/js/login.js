@@ -1,16 +1,27 @@
-let botonLateral = document.getElementById('añadirtareaLateral');
-let tareasUsuario = document.getElementById('tareasUsuario');
-let anadirTareaMain = document.getElementById('botonMain');
-let TareasPendientes = document.getElementById('TareasPendientes');
-let usuario =
-    console.log(TareasPendientes, );
-botonLateral.addEventListener('click', () => {
-    let tarea = prompt('Escribe tu tarea');
-    tareasUsuario.innerHTML += '<li> ' + tarea + '</h1>';
+const botonLogin = document.getElementById('botonLogin');
+
+botonLogin.addEventListener('submit', (e) => {
+    const emailLogin = document.getElementById('nombreLogin').value;
+    const passwordLogin = document.getElementById('passwordLogin').value;
+    const usuariosStorage = JSON.parse(localStorage.getItem('usuarios'));
+    console.log(emailLogin, passwordLogin, usuariosStorage);
+    if (!verificacion(emailLogin, passwordLogin, usuariosStorage)) {
+        e.preventDefault();
+    }
+
+
+
 })
 
-anadirTareaMain.addEventListener('click', () => {
-    let inputMain = document.getElementById('tareaMain').value;
-    TareasPendientes.innerHTML += `<tr> <td> ${inputMain} </td> </tr>`;
-    console.log(inputMain);
-})
+function verificacion(correo, contrasena, usuarios) {
+    let existe = false;
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i].email == correo && usuarios[i].contrasena == contrasena) {
+            existe = true;
+        } else {
+
+        }
+
+    }
+    return existe;
+}
